@@ -9,9 +9,6 @@
     WindowsFeature Web-WebServer {
         Name = "Web-WebServer"
         Ensure = 'Present'
-        IncludeAllSubFeature = $true
-    }
-
-    
+    }    
 
 }
