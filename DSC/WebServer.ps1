@@ -38,7 +38,7 @@
 
     xWebAppPool AppPoolFromDSC {
         Name = "AppPoolFromDSC"
-        DependsOn = "Web-WebServer"
+        DependsOn = "[WindowsFeature]Web-WebServer"
         Ensure = 'Present'
         autoStart = $true
         startMode = 'AlwaysRunning'
@@ -46,7 +46,7 @@
     }
 
     xWebsite WebSiteFromDSC {
-        DependsOn = "AppPoolFromDSC","HelloWorldWebsite","LogFiles","WebSiteFiles"
+        DependsOn = "[xWebAppPool]AppPoolFromDSC","[File]HelloWorldWebsite","[File]LogFiles","[File]WebSiteFiles"
         Ensure = 'Present'
         Name = "DscWasHere"
         PhysicalPath = "C:\web"
