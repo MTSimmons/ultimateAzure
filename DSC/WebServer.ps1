@@ -51,7 +51,7 @@
     }
 
     xWebsite WebSiteFromDSC {
-        DependsOn = "[xWebAppPool]AppPoolFromDSC","[File]HelloWorldWebsite","[File]LogFiles","[File]WebSiteFiles"
+        DependsOn = "[xWebAppPool]AppPoolFromDSC","[File]HelloWorldWebsite","[File]LogFiles","[File]WebSiteFiles","[xWebsite]Default"
         Ensure = 'Present'
         Name = "DscWasHere"
         PhysicalPath = "C:\web"
@@ -59,6 +59,13 @@
         ApplicationPool = 'AppPoolFromDSC'
         DefaultPage = "default.html"
         LogPath = "C:\logs"
-        
     }
+
+    xWebsite Default {
+        DependsOn = "[WindowsFeature]Web-WebServer"
+        Name = "Default Web Site"
+        Ensure = Present
+        State = 'Stopped'
+    }
+
 }
