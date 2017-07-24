@@ -13,6 +13,11 @@
         Name = "Web-WebServer"
         Ensure = 'Present'
     }    
+    
+    WindowsFeature Web-Mgmt-Tools {
+        Name = "Web-Mgmt-Tools"
+        Ensure = 'Present'
+    }    
 
     File WebSiteFiles {
         DestinationPath = "C:\web"
