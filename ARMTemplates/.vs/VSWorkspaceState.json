@@ -1,0 +1,11 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\DevBuildout",
+    "\\DevBuildout\\bin",
+    "\\DevBuildout\\obj",
+    "\\DevEnvironment"
+  ],
+  "SelectedNode": "\\DevBuildout\\LoadBalancedVirtualMachine.json",
+  "PreviewInSolutionExplorer": false
+}

@@ -1,0 +1,27 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "storagename0": {
+            "value": "mtsimmonsevenstorage"
+        },
+        "storagename1": {
+            "value": "mtsimmonsoddstorage"
+        },       
+        "location": {
+            "value": "eastus2"
+        },
+        "accountType": {
+            "value": "Standard_LRS"
+        },
+        "accessTier": {
+            "value": "Hot"
+        },
+        "encryptionEnabled": {
+            "value": false
+        },
+        "httpsTrafficOnlyEnabled": {
+            "value": false
+        }
+    }
+}

@@ -64,7 +64,7 @@
     xWebsite Default {
         DependsOn = "[WindowsFeature]Web-WebServer"
         Name = "Default Web Site"
-        Ensure = Present
+        Ensure = "Present"
         State = 'Stopped'
     }
 

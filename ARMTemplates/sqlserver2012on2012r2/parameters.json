@@ -1,0 +1,90 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "eastus"
+        },
+        "virtualMachineName": {
+            "value": "sql2012-00"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_DS12_v2"
+        },
+        "adminUsername": {
+            "value": "MTSimmons"
+        },
+        "virtualNetworkName": {
+            "value": "MyVNET"
+        },
+        "networkInterfaceName": {
+            "value": "sql2012-00234"
+        },
+        "networkSecurityGroupName": {
+            "value": "sql2012-00-nsg"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "availabilitySetName": {
+            "value": "SQLAvailabilitySet"
+        },
+        "availabilitySetPlatformFaultDomainCount": {
+            "value": "2"
+        },
+        "availabilitySetPlatformUpdateDomainCount": {
+            "value": "2"
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "simmonsrg01diag828"
+        },
+        "diagnosticsStorageAccountType": {
+            "value": "Standard_LRS"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "Microsoft.Storage/storageAccounts/simmonsrg01diag828"
+        },
+        "subnetName": {
+            "value": "Subnet"
+        },
+        "publicIpAddressName": {
+            "value": "sql2012-00-ip"
+        },
+        "publicIpAddressType": {
+            "value": "Dynamic"
+        },
+        "sqlConnectivityType": {
+            "value": "Private"
+        },
+        "sqlPortNumber": {
+            "value": 55022
+        },
+        "sqlStorageDisksCount": {
+            "value": 1
+        },
+        "sqlStorageWorkloadType": {
+            "value": "GENERAL"
+        },
+        "sqlStorageDisksConfigurationType": {
+            "value": "NEW"
+        },
+        "sqlStorageStartingDeviceId": {
+            "value": 2
+        },
+        "sqlStorageDeploymentToken": {
+            "value": 48104
+        },
+        "sqlAutopatchingDayOfWeek": {
+            "value": "Sunday"
+        },
+        "sqlAutopatchingStartHour": {
+            "value": "2"
+        },
+        "sqlAutopatchingWindowDuration": {
+            "value": "60"
+        },
+        "rServicesEnabled": {
+            "value": "false"
+        }
+    }
+}
